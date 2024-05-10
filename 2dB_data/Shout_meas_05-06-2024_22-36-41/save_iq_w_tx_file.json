@@ -1,0 +1,27 @@
+[
+ {
+    "cmd": "save_iq_w_tx",
+    "sync": true,
+    "timeout": 150,
+
+    "nsamps": 338752,
+
+    "wotxrepeat": 1,
+    
+    "txrate": 2e6,
+    "txfreq": 3385e6,
+    "txgain": {"fixed": 25.0},
+    "txsamps": {"file": "/users/meles/TX_watermark_may_2024.iq"},
+    "txwait": 3,
+    "use_lo_offset": true,
+
+    "rxrate": 2e6,
+    "rxfreq": 3385e6,
+    "rxgain": {"fixed": 30.0},
+    "rxrepeat": 10,
+    "rxwait": {"min": 50, "max": 2000, "res": "ms"},
+
+    "txclients": ["cbrssdr1-ustar-comp"],
+    "rxclients": ["cbrssdr1-browning-comp"]
+ }
+]
